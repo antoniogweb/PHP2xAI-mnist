@@ -1,0 +1,16 @@
+{
+	"name": "antoniogweb/php2xai-mnist",
+	"description": "MNIST exercise using PHP2xAI",
+	"type": "project",
+	"repositories": [
+		{
+			"type": "path",
+			"url": "../PHP2xAI"
+		}
+	],
+	"require": {
+		"tuonome/php2xai": "dev-main"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

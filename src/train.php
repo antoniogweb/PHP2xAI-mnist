@@ -9,11 +9,10 @@ ini_set('serialize_precision', 30);
 ini_set("display_errors", "On");
 ini_set("memory_limit", "10G");
 
-include("../../autoload.php");
+include("../PHP2xAI/autoload.php");
 include("model.php");
 
 $path = "./DataLabelInt/Training";
-$pathVal = "./DataLabelInt/Test";
 $outputPath = "./Output";
 
 if (!@is_dir($outputPath))
