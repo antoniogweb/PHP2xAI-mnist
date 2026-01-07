@@ -1,16 +1,12 @@
 {
 	"name": "antoniogweb/php2xai-mnist",
-	"description": "MNIST exercise using PHP2xAI",
+	"description": "MNIST classification exercise built on PHP2xAI.",
 	"type": "project",
-	"repositories": [
-		{
-			"type": "path",
-			"url": "../PHP2xAI"
-		}
-	],
+	"license": "MIT",
 	"require": {
-		"tuonome/php2xai": "dev-main"
+		"php": ">=8.1",
+		"antoniogweb/php2xai": "^0.1"
 	},
-	"minimum-stability": "dev",
+	"minimum-stability": "stable",
 	"prefer-stable": true
 }
