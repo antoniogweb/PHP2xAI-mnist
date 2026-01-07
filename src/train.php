@@ -18,8 +18,8 @@ $outputPath = "./Output";
 if (!@is_dir($outputPath))
 	@mkdir($outputPath, 0777, true);
 
-$dataset = new StreamFileDataset($path."/train.txt", 1024);
-$valDataset = new StreamFileDataset($path."/test.txt", 1024);
+$dataset = new StreamFileDataset($path."/train.txt", 300);
+$valDataset = new StreamFileDataset($path."/test.txt", 300);
 
 $tvDataset = new TrainValidateDataset($dataset, $valDataset);
 
@@ -29,5 +29,5 @@ $model = new MnistModel($optimizer, 128, 56);
 
 $epochsNumber = 20;
 
-// $model->setRuntime("CPP");
+$model->setRuntime("CPP");
 $model->train($tvDataset, $epochsNumber, realpath("./Output")."/weights.json");
