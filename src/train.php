@@ -9,7 +9,7 @@ ini_set('serialize_precision', 30);
 ini_set("display_errors", "On");
 ini_set("memory_limit", "10G");
 
-include("../PHP2xAI/autoload.php");
+include("../vendor/autoload.php");
 include("model.php");
 
 $path = "./DataLabelInt/Training";

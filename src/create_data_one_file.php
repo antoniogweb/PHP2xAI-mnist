@@ -5,7 +5,7 @@ ini_set("memory_limit", "10G");
 use PHP2xAI\Datasets\Batches\FileBatch;
 use PHP2xAI\Utility\Images\Vectorizer;
 
-include("../../autoload.php");
+include("../vendor/autoload.php");
 
 mt_srand(42);
 
