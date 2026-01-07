@@ -2,7 +2,7 @@
 	"name": "antoniogweb/php2xai-mnist",
 	"description": "MNIST classification exercise built on PHP2xAI.",
 	"type": "project",
-	"license": "MIT",
+	"license": "GPL-3.0-only",
 	"require": {
 		"php": ">=8.1",
 		"antoniogweb/php2xai": "^0.1"
