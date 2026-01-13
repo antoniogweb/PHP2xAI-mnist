@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b9c21f216261c4b0447e682385aa3a29",
+    "packages": [
+        {
+            "name": "antoniogweb/php2xai",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../PHP2xAI",
+                "reference": "dbd6e7bc1194fbcc83a49e565312c7fd637bb80d"
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHP2xAI\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "description": "AI framework with a PHP frontend and a C++ runtime.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [
+        {
+            "package": "antoniogweb/php2xai",
+            "version": "dev-main",
+            "alias": "0.1.0",
+            "alias_normalized": "0.1.0.0"
+        }
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "antoniogweb/php2xai": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
