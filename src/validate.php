@@ -15,7 +15,7 @@ $valDataset = new StreamFileDataset($path."/test.txt", 300);
 
 $model = new MnistModel();
 $model->setRuntime("CPP");
-$model->loadModel("./model.json", "./Output/weights.json");
+$model->loadModel("./model.json", "./weights.json");
 
 $correct = 0;
 $total = 0;

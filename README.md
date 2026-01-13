@@ -19,7 +19,7 @@ php train.php
 
 What it does:
 - Reads data from `src/DataLabelInt/Training/train.txt` and `src/DataLabelInt/Training/test.txt`.
-- Trains the model and saves weights to `src/Output/weights.json`.
+- Trains the model and saves weights to `src/weights.json`.
 
 PHP or C++ runtime:
 - In `src/train.php` you will find `setRuntime("CPP")`: it uses the C++ runtime.
@@ -39,7 +39,7 @@ php validate.php
 ```
 
 What it does:
-- Loads the model from `src/model.json` and weights from `src/Output/weights.json`.
+- Loads the model from `src/model.json` and weights from `src/weights.json`.
 - Computes accuracy and inference time on the test set.
 
 PHP or C++ runtime:

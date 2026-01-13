@@ -8,14 +8,5 @@
         "antoniogweb/php2xai": "dev-main as 0.1.0"
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../PHP2xAI",
-            "options": {
-                "symlink": true
-            }
-        }
-    ]
+    "prefer-stable": true
 }

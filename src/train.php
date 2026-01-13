@@ -30,4 +30,4 @@ $model = new MnistModel($optimizer, 128, 56);
 $epochsNumber = 20;
 
 $model->setRuntime("CPP");
-$model->train($tvDataset, $epochsNumber, realpath("./Output")."/weights.json");
+$model->train($tvDataset, $epochsNumber, realpath(".")."/weights.json");
