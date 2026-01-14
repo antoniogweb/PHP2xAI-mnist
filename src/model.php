@@ -3,7 +3,6 @@
 use PHP2xAI\Models\Model;
 use PHP2xAI\Tensor\Matrix;
 use PHP2xAI\Tensor\Vector;
-use PHP2xAI\Tensor\Scalar;
 use PHP2xAI\Tensor\Tensor;
 use PHP2xAI\Runtime\PHP\Optimizers\Optimizer;
 
@@ -17,9 +16,9 @@ class MnistModel extends Model
 		$this->hidden1 = $hidden1;
 		$this->hidden2 = $hidden2;
 		
-		$this->W1 = Matrix::init($hidden1, 784, 0.05);
-		$this->W2 = Matrix::init($hidden2, $hidden1, 0.05);
-		$this->W3 = Matrix::init(10, $hidden2, 0.05);
+		$this->W1 = Matrix::init(784, $hidden1, 0.05);
+		$this->W2 = Matrix::init($hidden1, $hidden2, 0.05);
+		$this->W3 = Matrix::init($hidden2, 10, 0.05);
 		
 		$this->b1 = Vector::zeros($hidden1);
 		$this->b2 = Vector::zeros($hidden2);
@@ -30,9 +29,9 @@ class MnistModel extends Model
 	
 	public function forward(Tensor $x) : Tensor
 	{
-		$L1 = $this->W1->matmul($x)->add($this->b1)->ReLU();
-		$L2 = $this->W2->matmul($L1)->add($this->b2)->ReLU();
-		$L3 = $this->W3->matmul($L2)->add($this->b3);
+		$L1 = $x->matmul($this->W1)->add($this->b1)->ReLU();
+		$L2 = $L1->matmul($this->W2)->add($this->b2)->ReLU();
+		$L3 = $L2->matmul($this->W3)->add($this->b3);
 		
 		return $L3;
 	}
@@ -44,7 +43,7 @@ class MnistModel extends Model
 		return $logits->softmax();
 	}
 	
-	public function loss(Tensor $x, Tensor $y) : Scalar
+	public function loss(Tensor $x, Tensor $y) : Tensor
 	{
 		$logits = $this->forward($x);
 		
