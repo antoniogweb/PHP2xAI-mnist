@@ -47,6 +47,6 @@ class MnistModel extends Model
 	{
 		$logits = $this->forward($x);
 		
-		return $logits->CELogitsLabelInt($y);
+		return $logits->CELogitsLabelInt($y)->mean();
 	}
 }
