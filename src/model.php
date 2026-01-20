@@ -1,8 +1,12 @@
 <?php
+// Attiva sviluppo locale
+// php scripts/composer-local.php
+// composer update
+// 
+// Torna allo stato pulito
+// git checkout -- composer.json
 
 use PHP2xAI\Models\Model;
-// use PHP2xAI\Tensor\Matrix;
-// use PHP2xAI\Tensor\Vector;
 use PHP2xAI\Tensor\Tensor;
 use PHP2xAI\Runtime\PHP\Optimizers\Optimizer;
 
