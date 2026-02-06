@@ -1,5 +1,12 @@
 <?php
 
+// Attiva sviluppo locale
+// php scripts/composer-local.php
+// composer update
+// 
+// Torna allo stato pulito
+// git checkout -- composer.json
+
 use PHP2xAI\Runtime\PHP\Datasets\TrainValidateDataset;
 use PHP2xAI\Runtime\PHP\Datasets\StreamFileDataset;
 use PHP2xAI\Runtime\PHP\Optimizers\Adam;
