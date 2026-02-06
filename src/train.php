@@ -1,10 +1,10 @@
 <?php
 
-// Attiva sviluppo locale
+// Activate local development
 // php scripts/composer-local.php
 // composer update
 // 
-// Torna allo stato pulito
+//	Back to clean state
 // git checkout -- composer.json
 
 use PHP2xAI\Runtime\PHP\Datasets\TrainValidateDataset;
