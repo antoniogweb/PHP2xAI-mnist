@@ -23,6 +23,7 @@ What it does:
 
 PHP or C++ runtime:
 - In `src/train.php` you will find `setRuntime("CPP")`: it uses the C++ runtime.
+- In `src/train.php` you will find `setProvider("EIGEN")`: it uses the C++ EIGEN library. Comment or remove the call to use naive/standard C++ runtime
 - To use the PHP runtime, replace it with `setRuntime("PHP")` or remove the call.
 
 Batch size:
@@ -44,6 +45,7 @@ What it does:
 
 PHP or C++ runtime:
 - In `src/validate.php` you will find `setRuntime("CPP")`: it uses the C++ runtime.
+- In `src/validate.php` you will find `setProvider("EIGEN")`: it uses the C++ EIGEN library. Comment or remove the call to use naive/standard C++ runtime
 - To use the PHP runtime, replace it with `setRuntime("PHP")` or remove the call.
 
 ## Notes

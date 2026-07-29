@@ -32,7 +32,7 @@ $tvDataset = new TrainValidateDataset($dataset, $valDataset);
 
 $optimizer = new Adam(0.0005, 0.9, 0.999);
 $optimizer->setGradClip(1.0); // evita spike di gradiente che fanno risalire la loss
-$model = new MnistModel($optimizer, 128, 56);
+$model = new MnistModel($optimizer, 2048, 1024);
 
 $epochsNumber = 20;
 
