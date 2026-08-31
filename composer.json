@@ -8,5 +8,11 @@
         "antoniogweb/php2xai": "^0.5"
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Antonio Gallo",
+            "email": "antoniog.web@gmail.com"
+        }
+    ]
 }
