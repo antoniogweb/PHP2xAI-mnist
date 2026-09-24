@@ -2,7 +2,7 @@
 ini_set("display_errors", "On");
 ini_set("memory_limit", "10G");
 
-use PHP2xAI\Datasets\Batches\FileBatch;
+// use PHP2xAI\Datasets\Batches\FileBatch;
 use PHP2xAI\Utility\Images\Vectorizer;
 
 include("../vendor/autoload.php");
